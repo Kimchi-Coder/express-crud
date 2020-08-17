@@ -1,0 +1,27 @@
+GET http://localhost:5000/subscribers
+
+###
+
+GET http://localhost:5000/subscribers/5f2e98c0f04c1f256896396a
+
+###
+
+POST http://localhost:5000/subscribers
+content-type: application/json
+
+{
+    "name": "Luigi",
+    "subscribedToChannel": "Plumber Bros Co."
+}
+
+###
+DELETE http://localhost:5000/subscribers/Luigi
+
+###
+PATCH http://localhost:5000/subscribers/5f2e98c0f04c1f256896396a
+content-type: application/json
+
+{
+    "name": "Luigi",
+    "subscribedToChannel": "Pipes No More"
+}
